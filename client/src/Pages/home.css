@@ -1,0 +1,24 @@
+.btn-ask{
+    position: absolute;
+    top: 100px;
+    width: 140px;
+    height: 60px;
+    left: 100px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(45, 119, 239);
+    color: white;
+}
+.ask-quest{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.welcome-user{
+    position: absolute;
+    top: 150px;
+    left: 75%;
+    font-weight: 100;
+   
+}

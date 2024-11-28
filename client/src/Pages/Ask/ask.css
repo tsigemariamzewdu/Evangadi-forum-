@@ -1,0 +1,49 @@
+.postquestion{
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    width: 700px;
+    height: 500px;
+   
+}
+.steps{
+    margin-left: 140px;
+    margin-bottom: 10px;
+
+}
+.post-inst{
+    text-align: center;
+}
+.inputs {
+    display: flex; /* Use flexbox to align items in a row */
+    gap: 10px; /* Adds space between the input and textarea */
+    align-items: flex-start;
+   
+     /* Align items at the top (optional) */
+  }
+  
+  .inputs input {
+    flex: 1; /* Makes the input field flexible */
+    padding: 8px; /* Adds padding for better appearance */
+    font-size: 1rem; /* Adjust font size */
+    width: 200px;
+  }
+  
+  .inputs textarea {
+    flex: 2; /* Makes the textarea wider */
+    padding: 8px; /* Adds padding for better appearance */
+    font-size: 1rem; /* Adjust font size */
+    resize: vertical;
+    width: 200px; /* Allow resizing only vertically */
+  }
+  .btn-post{
+    margin-left: 500px;
+    margin-top: 50px;
+    width: 120px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    border-color: transparent;
+  }
+  

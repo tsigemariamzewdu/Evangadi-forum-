@@ -1,7 +1,8 @@
 import React from 'react'
 import {useRef} from "react";
-import axios from "../axiosConfig";
-import {useNavigate} from "react-router-dom"
+import axios from "../../axiosConfig";
+import {useNavigate,Link} from "react-router-dom";
+import "./register.css";
 
 function Register() {
   const navigate=useNavigate()
@@ -55,34 +56,41 @@ function Register() {
 
   return (
     <section>
-      <form onSubmit={handlesubmit}>
-        <label htmlFor="Username">Username:</label>
+      <form onSubmit={handlesubmit} className='register-compo'>
+       <h1 className='create'>Create a new account</h1>
+       <p className='tologin'>Already have an account? <Link to={'/login'}>Login</Link></p>
+       <input 
+        ref={emailDom}type="email"  placeholder="email"/>
+        <br />
+        <br />
+        
+        <div className='container'>
+        <input className='short-input' 
+        ref={firstnameDom}type="text"  placeholder="firstname"/>
+        
+        
+        <input 
+        ref={lastnameDom} className='short-input'
+        type="text"  placeholder="lastname"/>
+        
+        </div>
+        <br />
+       
         <input 
         ref={usernameDom}
         type="text"  placeholder="username"/>
         <br />
         <br />
-        <label htmlFor="firstname">firstname:</label>
-        <input 
-        ref={firstnameDom}type="text"  placeholder="firstname"/>
-        <br />
-        <br />
-        <label htmlFor="lastname">lastname:</label>
-        <input 
-        ref={lastnameDom}
-        type="text"  placeholder="lastname"/>
-        <br />
-        <br />
-        <label htmlFor="email">email:</label>
-        <input 
-        ref={emailDom}type="email"  placeholder="email"/>
-        <br />
-        <br />
-        <label htmlFor="password">password:</label>
+        
+        
+       
+        
         <input ref={passwordDom}type="password"  placeholder="password"/>
         <br />
         <br />
-        <button type='submit'>register</button>
+        <div className='btn-center'>
+        <button  className='btn-register'type='submit'>Agree and Join</button>
+        </div>
 
       </form>
     </section>

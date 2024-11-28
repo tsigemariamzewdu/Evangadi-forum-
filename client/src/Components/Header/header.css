@@ -1,0 +1,52 @@
+.header{
+    position: absolute;
+    height: 60px;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.5);
+    width: 100vw;
+   
+}
+#logo-img{
+    position:absolute;
+    left: 20%;
+    top: 10px;
+}
+/* styles.css */
+
+/* styles.css */
+.nav-link {
+    text-decoration: none; /* Removes the underline */
+    color: #333; /* Default color */
+    margin: 0 10px; /* Adds spacing between links */
+    font-weight: bold; /* Makes the text bold */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .nav-link:hover {
+    color: rgb(255, 153, 0); /* Change color on hover */
+  }
+  
+  .nav-link:active {
+    color: #0056b3; /* Active link color */
+  }
+  
+  nav {
+     /* Navbar background */
+    /* Spacing around links */
+    position: absolute;
+    left: 50%;
+    top: 20px;
+  }
+  .nav-button{
+    color:white;
+    background-color: rgb(37, 95, 239);
+    padding: 10px 50px;
+    margin-left: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    
+  }
+  .nav-button:hover{
+    background-color: rgb(255, 153, 0);
+  }
+  

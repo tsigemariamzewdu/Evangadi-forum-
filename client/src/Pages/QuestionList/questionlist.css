@@ -1,0 +1,73 @@
+.ul-container{
+position: absolute;
+top: 160px;
+width: 100%;
+
+}
+h3{
+   position: relative;
+   left: 30%;
+   top: 90px;
+
+}
+.icon {
+   
+    
+    font-size: 3rem; /* Adjust size */
+    color: #007bff; /* Add a color */
+    margin: 10px; /* Add spacing */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  .icon:hover {
+    color: #0056b3; /* Change color on hover */
+  }
+  .icon-container{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+    background-color: #efe4e4;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .username{
+    margin-left: 40px;
+    margin-top: -10px;
+  }
+  .line {
+    border: none; /* Removes default border */
+    border-top: 2px solid #a4a0a0; /* Creates a solid line */
+    margin: 20px 0; /* Adds spacing */
+    width: 80%; /* Adjusts the length */
+  }
+  .quest-container{
+    
+   
+    margin: 20px;
+    padding: 20px;
+    gap: 20px;
+    height: 150px;
+  }
+  
+  .greaterthan{
+    position: relative;
+   left: 70%;
+   top: -60px;
+   font-size: 20px;
+   background-color: white;
+   border-color: transparent;
+    
+
+
+   
+  
+  }
+  .fauser{
+    width: 100px;
+    height: 50px;
+  }
+  
+  

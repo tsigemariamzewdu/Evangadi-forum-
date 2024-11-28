@@ -1,0 +1,22 @@
+.side-note{
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    width: 600px;
+}
+.side-note p{
+    font-size: 18px;
+   
+}
+.side-note button{
+    width: 300px;
+    height: 40px;
+    text-decoration: none;
+    background-color: rgb(255, 153, 0);
+    border-color: transparent;
+    border-radius: 10px;
+
+}
+.side-note button:hover{
+    background-color: rgb(246, 98, 44);
+}

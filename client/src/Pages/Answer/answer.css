@@ -1,0 +1,15 @@
+.thefirst{
+    position: absolute;
+    top: 100px;
+    left: 30%;
+    width: 400px;
+    
+}
+.thesecond{
+    position:absolute;
+    top: 300px;
+    left: 20%;
+}
+.thethird button{
+    background-color: blue;
+}

@@ -1,0 +1,46 @@
+.register-compo{
+    position: absolute;
+    width: 35%;
+    top: 240px;
+    height: 550px;
+    left: 10%;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.5);
+    border-radius: 8px;
+}
+.register-compo:hover{
+    transform: translateY(-8px);
+    transition: 0.3s ease-in;
+}
+.create{
+    text-align: center;
+}
+.tologin{
+    text-align: center;
+}
+.container {
+    display: flex;         /* Use flexbox to align items in a row */
+            /* Add space between inputs */
+}
+.short-input{
+    width: 170px;
+}
+.btn-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.btn-register{
+    width: 250px;
+    height: 50px;
+    margin: 20px;
+    background-color: orange;
+    border-radius: 10px;
+    border-color: transparent;
+    
+
+}
+.btn-register:hover{
+    background-color: rgb(246, 98, 44);
+}

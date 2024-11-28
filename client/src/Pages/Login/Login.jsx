@@ -1,7 +1,9 @@
 import React from 'react'
 import {useRef} from "react";
-import axios from "../axiosConfig"
-import { useNavigate } from 'react-router-dom';
+import axios from "../../axiosConfig";
+import "./login.css";
+import { useNavigate,Link } from 'react-router-dom';
+import Footer from '../../Components/Footer/Footer';
 
 
 
@@ -45,20 +47,30 @@ function Login() {
     
       }
   return (
+    <div>
+      <div className='login-compo'>
+      <p id="login-intro">Login to your account</p>
+      <p className='register'>Don't have an account?<Link to="/register">Create a new account</Link></p>
     <form onSubmit={handlesubmit}>
    
-    <label htmlFor="email">email:</label>
+    
     <input 
     ref={emailDom}type="email"  placeholder="email"/>
     <br />
     <br />
-    <label htmlFor="password">password:</label>
+
     <input ref={passwordDom}type="password"  placeholder="password"/>
     <br />
     <br />
-    <button type='submit'>login</button>
-
+    <div className='btn-center'>
+    <button type='submit' className='login'>login</button>
+    </div>
   </form>
+  </div>
+
+  </div>
+
+  
   )
 }
 

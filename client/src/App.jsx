@@ -1,10 +1,18 @@
 import { Route,Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-import Login from "./Pages/Login"
-import Register from "./Pages/Register";
+import Login from "./Pages/Login/Login"
+import Register from "./Pages/Register/Register";
 import { useEffect ,useState,createContext} from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate ,Link} from "react-router-dom";
 import axios from "./axiosConfig";
+import Header from "./Components/Header/Header";
+import How from "./Pages/howItWorks/How"
+import "./App.css";
+import Ask from "./Pages/Ask/Ask";
+import Answer from "./Pages/Answer/Answer";
+import Sidenote from "./Components/Sidenote/Sidenote";
+
+
 
 export const AppState=createContext()
 
@@ -19,9 +27,10 @@ function App() {
     try{
       const {data} =await axios.get('user/check',{
         headers:{
-          Authorization:"Bearer" + token,
+          Authorization:"Bearer " + token,
         }
       })
+      console.log(data.user)
       setUser(data)
     } catch(error){
       console.log(error.response)
@@ -36,16 +45,34 @@ function App() {
 
 
   },[])
+  
 
   
   return (
    <AppState.Provider value={{user,setUser}}>
+     <div className='login-page'>
+    <Header/>
       <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/login' element={<Login/>}/>
-      <Route path='/register' element={<Register/>}/>
+        <Route path="/howitworks" element={<How/>}/>
+      <Route path='/' element={
+        <>
+        <Home/> 
+        </>}/>
+        <Route path="/ask" element={<Ask/>}/>
+      <Route path='/login' element={ <><Login/> <Sidenote/></>}/>
+      <Route path='/register' element={<><Register/> <Sidenote/></>}/>
+      <Route path ="/answers" element={<Answer/>}/>
       </Routes>
-  
+     
+      
+
+
+
+
+
+
+
+      </div>
    
       </AppState.Provider>
   );
