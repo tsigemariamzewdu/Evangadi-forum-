@@ -1,15 +1,67 @@
+.answer-container{
+    width: 90%;
+    height: 100vh;
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    background-color:white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
 .thefirst{
     position: absolute;
     top: 100px;
-    left: 30%;
-    width: 400px;
+    left: 5%;
+
+   height: 200px;
     
+}   
+.thefirst h1{
+    text-transform: capitalize;
+}
+.thefirst p{
+    text-transform: capitalize;
 }
 .thesecond{
     position:absolute;
     top: 300px;
-    left: 20%;
+    left:5%;
+}
+form{
+    width: 200px;
+    
+   
+}
+.thethird {
+   
+    width: 500px;
+    height: 100px;
+    position: relative;
+    top: 500px;
+    left: 300px;
+    
+}
+h2{
+    color: black;
+}
+textarea{
+    width: 400px;
+    height: 100px;
+
 }
 .thethird button{
-    background-color: blue;
+    background-color: orange;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    border-color: transparent;
+    height: 60px;
+
+}
+.thethird button :hover{
+    background-color: rgb(44, 132, 239);
+    margin: 30px;
 }

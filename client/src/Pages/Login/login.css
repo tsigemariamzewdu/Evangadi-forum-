@@ -48,6 +48,8 @@ input:focus {
    font-size: 16px;
    width: 200px;
    height: 50px;
+   position: relative;
+   left: 150px;
 }
 .login:hover{
     background-color: rgb(246, 98, 44);

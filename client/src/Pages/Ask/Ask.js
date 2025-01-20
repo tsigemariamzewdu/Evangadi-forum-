@@ -34,7 +34,7 @@ function Ask() {
     }
   return (
     <div className='postquestion'>
-        <h1 className='steps-title'>steps to write a good question.</h1>
+        <h1 className='steps-title'>steps to write a good question</h1>
         <ul>
             <li className='steps'>summerize your problems in a one-line-title</li>
             <li className='steps'>describe your problem in more detail.</li>
@@ -46,12 +46,13 @@ function Ask() {
         <input type="text"
          placeholder='Question Title' 
          value={title}
-         onChange={(e)=>setTitle(e.target.value)}/>
+         onChange={(e)=>setTitle(e.target.value)} className='inputtitle'/>
         <textarea name="" id="" placeholder='Question detail....'
         value={description}
         onChange={(e)=>{
             setDescription(e.target.value)
-        }}></textarea></div>
+        }}></textarea>
+        </div>
         <button onClick={handlePost}className='btn-post'>Post Question</button>
     </div>
     

@@ -1,7 +1,10 @@
 import React,{useState,useEffect} from 'react';
 import axios from "../../axiosConfig"
 import { useLocation } from 'react-router-dom'
-import "./answer.css"
+import "./answer.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+
 
 function Answer() {
     const location=useLocation();
@@ -68,11 +71,11 @@ function Answer() {
 
     
   return (
-    <div>
+    <div className='answer-container'>
         <div className='thefirst'>
             
             <h1>{title}</h1>
-            <p>{description}</p>
+            <p> description :{description}</p>
             
             {/* here the question title and the description  */}
         </div>
@@ -85,7 +88,7 @@ function Answer() {
                     {answers.map((answer, index) => (
                         <li key={index}>
                             {console.log(answer)}
-                            <strong>{answer.username}:</strong> {answer.answer}
+                            <strong> <FontAwesomeIcon icon={faUser}/>{answer.username}:</strong> {answer.answer}
                         </li>
                     ))}
                 </ul>
@@ -93,7 +96,8 @@ function Answer() {
         </div>
         
        
-        <div>
+        <div className='thethird'>
+            <h2>Post your answer below !</h2>
                 <form onSubmit={handlePostSol}>
                     <textarea 
                         placeholder="Enter your answer" 
