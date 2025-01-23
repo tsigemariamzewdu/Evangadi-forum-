@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 400px 100px;
+    grid-template-columns: 20% 40% 20% ;
+    grid-template-areas: 
+    "header header header "
+    "ads main links"
+    "footer footer footer";
+    /* Creates 6 equal-width columns */
+    gap: 10px; /* Spacing between grid items */
+    width: 80%;
+    height: 80%;
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: lightblue;
+    border: 2px solid #007BFF;
+    text-align: center;
+}
+
+/* First Example: Item 1 starts at column 1 and spans 3 columns */
+/* #one {
+    grid-area: header;
+    background-color: red;
+}
+
+/* Second Example: Item 1 starts at column 3 and ends at the last column */
+/* #two {
+   grid-area: ads;
+    background-color: yellow;
+}
+#three{
+    grid-column-start:2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end:3;
+    background-color:blue;
+}
+#five{
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end:4;
+    background-color: yellow;
+} */ 
+@media screen and (orientation: landscape) {
+    body { background-color: green; }
+    }
+    @media screen and (orientation: portrait) {
+    body { background-color: red; }
+    }
